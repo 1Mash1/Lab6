@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 1rem;
+}
+
+h1 {
+    color: #bada55;
+}
+
+.code-section {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border: 3px dashed #bada55;
+    border-radius: 5px;
+}
+
+.tasks-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Task styles start */
+.application-form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 1px solid grey;
+}
+
+.application-form__fieldset {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.application-form__legend {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.application-form__row {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.application-form__label {
+    min-width: 10rem;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.application-form__input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #8C92AC;
+}
+
+.application-form__input_warning {
+    border-bottom: 3px dotted #ff9966;
+}
+
+.application-form__input_invalid {
+    border-bottom: 3px dotted #ff1919;
+}
+
+.application-form__input:focus, .application-form__text:focus {
+    border-bottom-color: #5F9EA0;
+    outline: solid #32a1ce;
+}
+
+.application-form__text {
+    flex-grow: 1;
+    border: 1px dashed #ddd;
+}
+
+.application-form__button {
+    padding: 0.5rem;
+    background-color: #9F2B68;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+
+.application-form__button:disabled {
+    background-color: #E0B0FF
+}
+
+.application-form__button:active:not(:disabled) {
+    background-color: #800020;
+}
+
+.application-form__button:focus {
+    outline: solid #32a1ce;
+}
+
+.application-form__controls {
+    display: flex;
+    flex-direction: column;
+}
+/* Task styles end */

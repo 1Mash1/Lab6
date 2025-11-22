@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="junit test results" tests="13" failures="13" errors="0" time="2.096">
+  <testsuite name="Server communications" errors="0" failures="13" skipped="0" timestamp="2025-10-20T08:19:37" time="1.963" tests="13">
+    <testcase classname="Server communications getRandomUsers when &quot;quantity&quot; and &quot;nationalities&quot; parameters are passed should fetch random users with correct params" name="Server communications getRandomUsers when &quot;quantity&quot; and &quot;nationalities&quot; parameters are passed should fetch random users with correct params" time="0.163">
+      <failure>TypeError: dom.window.getRandomUsers is not a function
+    at Object.getRandomUsers (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:70:34)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Server communications getRandomUsers when &quot;quantity&quot; and &quot;nationalities&quot; parameters are passed should return results in the returned promise" name="Server communications getRandomUsers when &quot;quantity&quot; and &quot;nationalities&quot; parameters are passed should return results in the returned promise" time="0.023">
+      <failure>TypeError: dom.window.getRandomUsers is not a function
+    at Object.getRandomUsers (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:79:54)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Server communications getRandomUsers when &quot;quantity&quot; and &quot;nationalities&quot; parameters are not passed should fetch random users with correct params" name="Server communications getRandomUsers when &quot;quantity&quot; and &quot;nationalities&quot; parameters are not passed should fetch random users with correct params" time="0.02">
+      <failure>TypeError: dom.window.getRandomUsers is not a function
+    at Object.getRandomUsers (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:100:34)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Server communications getRandomUsers when &quot;quantity&quot; and &quot;nationalities&quot; parameters are not passed should return results in the returned promise" name="Server communications getRandomUsers when &quot;quantity&quot; and &quot;nationalities&quot; parameters are not passed should return results in the returned promise" time="0.027">
+      <failure>TypeError: dom.window.getRandomUsers is not a function
+    at Object.getRandomUsers (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:109:54)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Server communications getUsers should return an empty array when input is an empty array" name="Server communications getUsers should return an empty array when input is an empty array" time="0.021">
+      <failure>TypeError: dom.window.getUsers is not a function
+    at Object.getUsers (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:147:44)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Server communications getUsers should NOT make fetch calls when input in an empty array" name="Server communications getUsers should NOT make fetch calls when input in an empty array" time="0.023">
+      <failure>TypeError: dom.window.getUsers is not a function
+    at Object.getUsers (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:157:30)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Server communications getUsers should fetch one user and return the result" name="Server communications getUsers should fetch one user and return the result" time="0.02">
+      <failure>TypeError: dom.window.getUsers is not a function
+    at Object.getUsers (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:169:51)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Server communications getUsers when there are several users should fetch all users" name="Server communications getUsers when there are several users should fetch all users" time="0.019">
+      <failure>TypeError: dom.window.getUsers is not a function
+    at Object.getUsers (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:202:55)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Server communications getUsers when there are several users should fetch all users and return null for non existing" name="Server communications getUsers when there are several users should fetch all users and return null for non existing" time="0.023">
+      <failure>TypeError: dom.window.getUsers is not a function
+    at Object.getUsers (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:215:55)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Server communications createPost should call https://jsonplaceholder.typicode.com/posts" name="Server communications createPost should call https://jsonplaceholder.typicode.com/posts" time="0.019">
+      <failure>TypeError: dom.window.createPost is not a function
+    at Object.createPost (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:258:30)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Server communications createPost should pass correct &quot;body&quot; and &quot;method&quot;" name="Server communications createPost should pass correct &quot;body&quot; and &quot;method&quot;" time="0.022">
+      <failure>TypeError: dom.window.createPost is not a function
+    at Object.createPost (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:267:30)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Server communications createPost should pass correct Content-Type header" name="Server communications createPost should pass correct Content-Type header" time="0.019">
+      <failure>TypeError: dom.window.createPost is not a function
+    at Object.createPost (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:279:30)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+    <testcase classname="Server communications createPost should return data which was created" name="Server communications createPost should return data which was created" time="0.019">
+      <failure>TypeError: dom.window.createPost is not a function
+    at Object.createPost (C:\Users\Ma__sh__ka\WebstormProjects\server-communications\src\index.test.js:297:49)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <title>Basic HTML page</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<section class="code-section container">
+    <h1>Hello, world!</h1>
+
+    <p class="code-section__note">To see your JavaScript code output, please, open browser console by pressing F12.</p>
+</section>
+
+<script src="src/script.js"></script>
+
+<script >
+    (async () => {
+        const randomUsers = await getRandomUsers(10, 'US');
+        console.log('randomUsers: ', randomUsers);
+
+        const users = await getUsers(['user1', 'user2', 'user_not_exist_in_github']);
+        console.log('users: ', users);
+
+        const postData = {
+            title: 'Post',
+            body: 'description',
+            userId: 1,
+        };
+        let post = await createPost(postData);
+        console.log('post data: ', post);
+    })();
+</script>
+</body>
+
+</html>

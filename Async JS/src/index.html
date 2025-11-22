@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <title>Basic HTML page</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Async JS</h1>
+
+    <p>
+      To see your JavaScript code output, please, open browser console by
+      pressing F12.
+    </p>
+
+    <div class="tasks-row">
+      <section class="code-section">
+        <h2>Function "mocker"</h2>
+      </section>
+
+      <section class="code-section">
+        <h2>Function "summarize"</h2>
+      </section>
+    </div>
+
+    <div>
+      <section class="code-section">
+        <h2>Function "getAllData"</h2>
+      </section>
+    </div>
+
+    <div>
+      <section class="code-section">
+        <h2>Function "getFriendNames"</h2>
+      </section>
+    </div>
+
+    <script type="module">
+      import { mocker } from "./mocker.js";
+      console.clear();
+
+      const usersData = [
+        { id: 1, login: "mickey" },
+        { id: 2, login: "billy77" },
+        { id: 3, login: "coooool123" },
+      ];
+
+      console.log("mocker(usersData): ", mocker(usersData));
+
+      const getUsers = mocker(usersData);
+      getUsers().then((users) => {
+        console.log(users);
+      });
+    </script>
+
+    <script type="module">
+
+      console.clear();
+      const promise1 = Promise.resolve(4);
+      const promise2 = new Promise((resolve) => resolve(2));
+      summarize1(promise1, promise2).then((sum) => {
+        console.log(sum);
+      });
+    </script>
+
+    <script type="module">
+      import { getAllData } from "./getAllData.js";
+
+      console.clear();
+
+      const database = [
+        { name: "John", age: 25, city: "New York" },
+        { name: "Alice", age: 30, city: "Los Angeles" },
+        { name: "Bob", age: 35, city: "Chicago" },
+      ];
+
+      getAllData(database).then((result) => {
+        console.log(result);
+      });
+    </script>
+
+    <script type="module">
+      import { getFriendNames } from "./getFriendNames.js";
+
+      console.clear();
+
+      getFriendNames(1).then((result) => {
+        console.log(result);
+      });
+    </script>
+  </body>
+</html>

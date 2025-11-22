@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <title>Basic HTML page</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Forms</h1>
+
+    <p>To see your JavaScript code output, please, open browser console by pressing F12.</p>
+
+    <div class="task-row">
+        <section class="code-section application-form-section">
+            <h2 id="task-1">Application Form for Speakers on the conference: "Web 7.0"</h2>
+
+            <form action="POST" class="application-form">
+                <fieldset class="application-form__fieldset">
+                    <legend class="application-form__legend">Contact Information</legend>
+
+                    <div class="application-form__row" id="title-wrapper">
+                        <label for="person-title-field" class="application-form__label">Your Title</label>
+                        <input type="text" name="person-title-field" id="person-title-field" 
+                            class="application-form__input">
+                    </div>
+
+                    <div class="application-form__row" id="firstname-wrapper">
+                        <label for="firstname" class="application-form__label">First Name</label>
+                        <input type="text" name="firstname" id="firstname" class="application-form__input"
+                            title="Please, fill the First Name" required>
+                    </div>
+
+                    <div class="application-form__row" id="lastname-wrapper">
+                        <label for="lastname" class="application-form__label">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" class="application-form__input"
+                            title="Please, fill the Last Name" required>
+                    </div>
+
+                    <div class="application-form__row" id="github-account-name-wrapper">
+                        <label for="github-account-name" class="application-form__label">GitHub Account</label>
+                        <input type="text" name="github-account-name" id="github-account-name"
+                            class="application-form__input">
+                    </div>
+
+                    <div class="application-form__row" id="email-wrapper">
+                        <label for="email" class="application-form__label">Email</label>
+                        <input type="text" name="email" id="email" class="application-form__input">
+                    </div>
+
+                    <div class="application-form__row" id="job-title-wrapper">
+                        <label for="job-title" class="application-form__label">Job Title</label>
+                        <input type="text" name="job-title" id="job-title" class="application-form__input">
+
+                        <span id="job-title-description-wrapper" class="hidden">
+                            <label for="job-title-description" class="application-form__label">Description</label>
+                            <input type="text" name="job-title-description" id="job-title-description"
+                                class="application-form__input">
+                        </span>
+                    </div>
+
+                    <div class="application-form__row" id="one-time-code-wrapper">
+                        <label for="one-time-code" class="application-form__label">One Time Code</label>
+                        <input type="password" name="one-time-code" id="one-time-code" class="application-form__input">
+
+                        <label for="show-one-time-code">Show One-Time Code</label>
+                        <input id="show-one-time-code" type="checkbox" name="show-checkbox">
+                    </div>
+                </fieldset>
+
+                <fieldset class="application-form__fieldset">
+                    <legend class="application-form__legend">Talk Information</legend>
+
+                    <div class="application-form__row" id="topic-wrapper">
+                        <label for="topic" class="application-form__label">Topic</label>
+                        <input type="text" name="topic" id="topic" class="application-form__input" autocomplete="off">
+                    </div>
+
+                    <div class="application-form__row" id="topic-wrapper">
+                        <label for="presentation-file" class="application-form__label">Presentation File</label>
+                        <input type="file" name="presentation-file" id="presentation-file" class="application-form__input"
+                            accept=".pdf,.doc,.docx,.ppt,.pptx,.odt" title="Presentation file is required">
+                    </div>
+
+                    <div class="application-form__row">
+                        <label for="topic-description" class="application-form__label">Description</label>
+                        <textarea class="application-form__text" name="topic-description" id="topic-description" cols="30"
+                            rows="10"></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="application-form__controls">
+                    <button class="application-form__button" type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script type="module">
+        import { initApplicationForm } from './initApplicationForm.js';
+
+        initApplicationForm();
+    </script>
+</body>
+
+</html>
